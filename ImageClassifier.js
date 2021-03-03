@@ -52,7 +52,9 @@
         print('pasaste por etiqueta1');
     } else if(label == 'Guerrero jaguar'){
         image(flippedVideo, 0, 0);
-        filter(THRESHOLD);
+        fill(255,0,0,100);
+        rect(0,0,640,480);
+        //filter(THRESHOLD);
             // Draw the label
         fill(255);
         textSize(16);
@@ -62,7 +64,9 @@
         print('pasaste por etiqueta2');
     }else if(label == 'Perrito de tela'){
         image(flippedVideo, 0, 0);
-        filter(INVERT);
+        fill(0,255,0,100);
+        rect(0,0,640,480);
+        //filter(INVERT);
             // Draw the label
         fill(255);
         textSize(16);
@@ -71,6 +75,19 @@
         print(label);
         print('pasaste por etiqueta3');
 
+    }else if(label == 'Cubrebocas'){
+        image(flippedVideo, 0, 0);
+        fill(0,0,255,100);
+        rect(0,0,640,480);
+        //filter(INVERT);
+            // Draw the label
+        fill(255);
+        textSize(16);
+        textAlign(CENTER);
+        text(label, width / 2, height - 4);
+        print(label);
+        print('pasaste por etiqueta4');  
+        
     }
 
   }
